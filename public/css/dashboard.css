@@ -1,0 +1,68 @@
+/* public/css/dashboard.css */
+
+/* Gaya umum untuk seluruh dashboard */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Gaya untuk sidebar navigasi */
+#wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar-wrapper {
+    width: 250px;
+    background-color: #343a40;
+    color: #fff;
+    min-height: 100vh;
+    position: fixed;
+}
+
+.sidebar-heading {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #212529;
+}
+
+.list-group-item {
+    border: none;
+    background-color: #343a40;
+    color: #fff;
+}
+
+.list-group-item-action:hover {
+    background-color: #495057;
+}
+
+/* Gaya untuk konten utama */
+#page-content-wrapper {
+    width: 100%;
+    padding-left: 250px; /* untuk memberikan ruang bagi sidebar */
+    transition: all 0.3s;
+}
+
+.container-fluid {
+    padding: 20px;
+}
+
+/* Tombol Toggle untuk Sidebar */
+#menu-toggle {
+    margin: 10px;
+}
+
+/* Gaya untuk tombol Logout */
+.navbar .ml-auto .btn-logout {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+}
+
+.navbar .ml-auto .btn-logout:hover {
+    background-color: #c82333;
+    color: #fff;
+}

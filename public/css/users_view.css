@@ -1,0 +1,29 @@
+/* Gaya untuk tombol */
+.bg-blue-500:hover, .bg-blue-700:hover {
+    transition: background-color 0.3s ease;
+}
+
+/* Gaya untuk tabel */
+.table-auto {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.table thead {
+    background-color: #f8fafc;
+    color: #333;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+/* Gaya untuk pesan sukses */
+.alert {
+    margin-top: 20px;
+}
+
+/* Gaya untuk pencarian */
+#search {
+    margin-bottom: 20px;
+}
