@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.adminuser')
 
 @section('content')
 <div class="container">
@@ -7,7 +7,7 @@
         <div class="card-body">
             <h5 class="card-title">{{ $user->name }}</h5>
             <p class="card-text">Email: {{ $user->email }}</p>
-            <a href="{{ route('users.index') }}" class="btn btn-primary">Back to Users List</a>
+            <a href="{{ route('admin.users.index') }}" class="btn btn-primary">Back to Users List</a>
         </div>
     </div>
 </div>

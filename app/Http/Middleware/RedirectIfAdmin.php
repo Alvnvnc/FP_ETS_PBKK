@@ -16,10 +16,13 @@ class RedirectIfAdmin
      */
     public function handle($request, Closure $next)
     {
+        // Check if the user is authenticated and has an admin role
         if (Auth::check() && Auth::user()->is_admin) {
-            return redirect()->route('admin.dashboard');
+            // Allow admin users to proceed
+            return $next($request);
         }
 
-        return $next($request);
+        // Redirect non-admin users to their dashboard
+        return redirect()->route('user.dashboard');
     }
 }
